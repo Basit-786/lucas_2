@@ -1,33 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  scroll-behavior: smooth;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Custom styles for navigation buttons */
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 888;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.custom-swiper-button-next {
+    right: 0;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.custom-swiper-button-prev {
+    left: 0;
+}
+.btnn{
+  transition: all 0.2s ease-in-out;
+}
+.btnn:hover{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 10px;
+  transform: translateY(-3px);
+}
+.nav-shadow{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.contactInput {
+  @apply outline-none bg-slate-500/20 rounded-md font-[500] text-black placeholder-gray-600 placeholder:font-semibold transition-all px-6 py-4;
+}
+.shadow-contact{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.3s ease-in-out;
+}
+.shadow-contact:hover{
+  box-shadow: rgba(149, 157, 165, 0.4) 0px 8px 34px;
+  transform: translateY(-4px);
 }
