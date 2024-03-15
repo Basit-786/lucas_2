@@ -31,7 +31,7 @@ const Contact = () => {
             </p>
 
             <a
-              href="#"
+              href="mailto:BIURO@BELTOWKSA.PL"
               className="text-lg hover:text-blue-950 font-medium underline"
             >
               {" "}
@@ -53,7 +53,7 @@ const Contact = () => {
             </p>
 
             <a
-              href="#"
+              href="tel:508570286"
               className="text-lg hover:text-blue-950 font-medium underline"
             >
               {" "}
@@ -121,7 +121,7 @@ const Contact = () => {
               <p class="text-gray-800 text-md text-left font-semibold">
                 Numer REGON
               </p>
-              <p class="text-gray-800 text-md">369271351</p>
+              <a href="" class="text-gray-800 text-md">369271351</a>
             </div>
           </motion.div>
         </div>{" "}
