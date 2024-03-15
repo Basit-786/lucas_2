@@ -59,14 +59,14 @@ const Hero = () => {
               href="#"
               className="mr-4 btnn inline-block bg-main  text-white font-semibold py-3 px-6 rounded-lg"
             >
-              Hire me!
+              Kontakt
             </a>
-            <a
+            {/* <a
               href="#"
               className="inline-block hover:translate-y-[-4px] transition-all duration-300 ease-in-out border border-transparent text-main font-semibold py-3 px-6 rounded-lg hover:border-main hover:text-main"
             >
               Hire me!
-            </a>
+            </a> */}
           </div>
         </motion.div>
       </div>

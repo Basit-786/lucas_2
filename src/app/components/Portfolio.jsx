@@ -6,13 +6,9 @@ import { onceTrue, slideInFromBottom } from "../utils/motion";
 
 const Portfolio = () => {
   const projects = [
-    { image: "/project.jpg", title: "Project 1" },
-    { image: "/project.jpg", title: "Project 2" },
-    { image: "/project.jpg", title: "Project 3" },
-    { image: "/project.jpg", title: "Project 4" },
-    { image: "/project.jpg", title: "Project 5" },
-    { image: "/project.jpg", title: "Project 6" },
-    // Add more projects as needed
+    { image: "/certificate.jpg", title: "Certificate 1" },
+    { image: "/certificate2.jpg", title: "Certificate 2" },
+    { image: "/certificate3.jpg", title: "Certificate 3" },
   ];
 
   return (

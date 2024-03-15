@@ -72,7 +72,7 @@ const Navbar = () => {
             className="flex items-center"
           >
             <button className="text-white btnn font-semibold py-2 px-4 shadow uppercase bg-main rounded-md">
-              Hire me!
+              Kontakt
             </button>
           </motion.div>
         </div>

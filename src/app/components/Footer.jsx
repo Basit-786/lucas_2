@@ -30,7 +30,7 @@ const Footer = () => {
               href="#about"
               className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
-              About
+               O mnie
             </a>
             <a
               href="#services"
@@ -48,7 +48,7 @@ const Footer = () => {
               href="#contact"
               className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
-              Contact
+              Kontakt
             </a>
           </motion.div>
           <motion.div

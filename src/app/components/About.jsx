@@ -16,7 +16,7 @@ const About = () => {
           className="lg:w-1/2 mb-8 lg:mb-0"
         >
           <button className="font-semibold uppercase  px-7 py-3 bg-main rounded-md inline-block text-white">
-            About Us
+          O mnie
           </button>
           <h2 className="text-3xl lg:text-4xl font-[900] my-4">
             Why you should hire me?
@@ -36,7 +36,7 @@ const About = () => {
           </p>
           <div className="mt-6">
             <button className="bg-main btnn text-white font-semibold py-2 px-6 rounded-lg">
-              Read More
+            Więcej
             </button>
           </div>
         </motion.div>
