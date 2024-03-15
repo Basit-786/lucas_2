@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <div className="py-12 px-10 lg:py-16 bg-gray-100 overflow-hidden">
       <div className="w-full max-w-screen-xl flex flex-col items-center justify-center m-auto">
-        <div className="w-full h-full flex flex-row items-center justify-between flex-wrap">
+        <div className="w-full h-full flex flex-row items-center justify-between md:justify-around flex-wrap">
           <motion.div
             variants={slideInFromLeft(0.1)}
             initial="hidden"
@@ -30,13 +30,13 @@ const Footer = () => {
               href="#about"
               className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
-               O mnie
+              O mnie
             </a>
             <a
               href="#services"
               className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
-              Services
+              Usługi
             </a>
             <a
               href="#faq"
@@ -52,7 +52,7 @@ const Footer = () => {
             </a>
           </motion.div>
           <motion.div
-            variants={slideInFromTop(0.3)}
+            variants={slideInFromRight(0.2)}
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
@@ -81,7 +81,7 @@ const Footer = () => {
               Twitter
             </a>
           </motion.div>
-          <motion.div
+          {/* <motion.div
             variants={slideInFromRight(0.2)}
             initial="hidden"
             whileInView={"visible"}
@@ -107,7 +107,7 @@ const Footer = () => {
             >
               Disclaimer
             </a>
-          </motion.div>
+          </motion.div> */}
         </div>
         <motion.div
           variants={slideInFromBottom(0.4, 20)}
@@ -116,7 +116,7 @@ const Footer = () => {
           viewport={onceTrue}
           className="text-center text-lg font-semibold mt-5"
         >
-          &copy; Company 2024 Inc. All Rights Reserved.
+          &copy; Lukasz 2024 Inc. All Rights Reserved
         </motion.div>
       </div>
     </div>

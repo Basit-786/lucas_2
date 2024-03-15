@@ -6,20 +6,17 @@ import { onceTrue, slideInFromBottom } from "../utils/motion";
 
 const Portfolio = () => {
   const projects = [
-    { image: "/certificate.jpg", title: "Certificate 1" },
-    { image: "/certificate2.jpg", title: "Certificate 2" },
-    { image: "/certificate3.jpg", title: "Certificate 3" },
+    { image: "/certificate.jpg", title: "Certyfikat 1" },
+    { image: "/certificate2.jpg", title: "Certyfikat 2" },
+    { image: "/certificate3.jpg", title: "Certyfikat 3" },
   ];
 
   return (
     <div id="portfolio" className="py-12 px-6 sm:px-6 lg:px-8 lg:py-16">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center">
         <button className="font-semibold uppercase mx-auto mb-5 text-center px-7 py-3 bg-main rounded-md inline-block text-white">
-          Portfolio
+        Certyfikaty
         </button>
-        <h2 className="text-3xl lg:text-4xl font-[900] my-4">
-          Featured Projects
-        </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (

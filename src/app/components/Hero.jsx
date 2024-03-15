@@ -56,7 +56,7 @@ const Hero = () => {
           </p>
           <div className="mt-10 uppercase">
             <a
-              href="#"
+              href="#contact"
               className="mr-4 btnn inline-block bg-main  text-white font-semibold py-3 px-6 rounded-lg"
             >
               Kontakt

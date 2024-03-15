@@ -19,7 +19,7 @@ const About = () => {
           O mnie
           </button>
           <h2 className="text-3xl lg:text-4xl font-[900] my-4">
-            Why you should hire me?
+          Dlaczego warto wybrać mnie?
           </h2>
           <p className="mt-3 text-lg leading-7 text-gray-600">
             Jako rzeczoznawca majątkowy z Nowego Targu, z tytułem magistra
@@ -34,11 +34,11 @@ const About = () => {
             podnoszenie kwalifikacji, co potwierdza ukończenie szkolenia w
             Związku Banków Polskich.
           </p>
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <button className="bg-main btnn text-white font-semibold py-2 px-6 rounded-lg">
             Więcej
             </button>
-          </div>
+          </div> */}
         </motion.div>
         {/* Image Section */}
         <motion.div

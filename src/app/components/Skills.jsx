@@ -7,10 +7,10 @@ import { onceTrue } from "../utils/motion";
 
 const Skills = () => {
   const skills = [
-    { title: "HTML", percent: 80 },
-    { title: "CSS", percent: 75 },
-    { title: "JavaScript", percent: 85 },
-    { title: "React", percent: 90 },
+    { title: "Wycen domów", percent: 80  },
+    { title: "Wycen działek", percent: 75 },
+    { title: "Wycen bankowych", percent: 85 },
+    { title: "Innych wycen", percent: 90 },
   ];
 
   return (
@@ -43,8 +43,8 @@ const Skills = () => {
                   strokeColor="#3D73DD"
                 />
                 <div className="absolute inset-0 flex items-center justify-center flex-col">
-                  <span className="text-xl lg:text-3xl ml-1 lg:ml-3 text-center font-semibold">
-                    <CountUp start={0} end={skill.percent} delay={0} />%
+                  <span className="text-xl lg:text-3xl text-center font-semibold">
+                    <CountUp start={0} end={skill.percent} delay={0} />
                   </span>
                   <h2 className="text-center text-sm lg:text-md">{skill.title}</h2>
                 </div>

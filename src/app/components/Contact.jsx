@@ -73,7 +73,7 @@ const Contact = () => {
             <p class="text-gray-800 text-center text-lg my-3">
               Staram się być dla was dostępna cały rok
             </p>
-            <p class="text-gray-800 text-center text-xl">Working Hours</p>
+            <p class="text-gray-800 text-center text-xl">Godziny pracy</p>
             <p class="text-gray-800 text-center text-lg my-3 font-semibold">
               Poniedziałek-Piątek
               <br />
@@ -125,15 +125,21 @@ const Contact = () => {
             </div>
           </motion.div>
         </div>{" "}
-        <div class="text-center mt-8">
-          <p class="text-2xl font-semibold mt-7 mb-4">Ready to get started?</p>
+        <motion.div 
+        
+        variants={slideInFromBottom(0.8, 70)}
+        initial="hidden"
+        whileInView={"visible"}
+        viewport={onceTrue}
+        class="text-center mt-8">
+          <p class="text-2xl font-semibold mt-7 mb-4">Gotowy do kontaktu?</p>
           <a
-            href="#"
+            href="#nav"
             className="font-semibold btnn uppercase mx-auto text-center px-7 py-3 transition-all duration-100 ease-linear bg-white border-main border hover:bg-main hover:text-white  rounded-md inline-block text-main"
           >
-            Get Started
+           Zadzwoń 
           </a>{" "}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

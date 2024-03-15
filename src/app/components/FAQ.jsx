@@ -47,12 +47,9 @@ const FAQ = () => {
         <button className="font-semibold uppercase mx-auto mb-5 text-center px-7 py-3 bg-main rounded-md inline-block text-white">
           FAQs
         </button>
-        <h2 className="text-3xl text-center lg:text-4xl font-[900] my-4">
-          Frequently Asked Questions
-        </h2>
         {faqs.map((faq, index) => (
           <motion.div
-            variants={slideInFromBottom(index / 3, 60)}
+            variants={slideInFromBottom(index / 6, 60)}
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}

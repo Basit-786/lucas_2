@@ -71,9 +71,9 @@ const Navbar = () => {
             whileInView={"visible"}
             className="flex items-center"
           >
-            <button className="text-white btnn font-semibold py-2 px-4 shadow uppercase bg-main rounded-md">
+            <a href="#contact" className="text-white btnn font-semibold py-2 px-4 shadow uppercase bg-main rounded-md">
               Kontakt
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

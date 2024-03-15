@@ -5,31 +5,35 @@ import { MdOutlineRealEstateAgent } from "react-icons/md";
 import { AiOutlineDollarCircle } from "react-icons/ai";
 import { FaFilePen } from "react-icons/fa6";
 
-
 import { motion } from "framer-motion";
 import { onceTrue, slideInFromBottom } from "../utils/motion";
 
 const Services = () => {
   const services = [
     {
-      icon: <MdOutlineRealEstateAgent className="text-main group-hover:text-white w-20 h-20 mx-auto"  />,
-      title: "Service 1",
+      icon: (
+        <MdOutlineRealEstateAgent className="text-main group-hover:text-white w-20 h-20 mx-auto" />
+      ),
+      title: "Wyceny",
       description:
         "Oferuję kompleksowe usługi rzeczoznawcze w Nowym Targu, obejmujące wyceny nieruchomości różnego typu: od niezabudowanych działek, przez domy i mieszkania, po obiekty komercyjne i przemysłowe. Specjalizuję się również w ocenie wartości nieruchomości rolnych, leśnych, zabytkowych oraz o specjalnym przeznaczeniu. Zapewniam profesjonalizm i dokładność, dostosowując usługi do indywidualnych potrzeb klienta.",
     },
     {
-      icon: <AiOutlineDollarCircle  className="text-main group-hover:text-white w-20 h-20 mx-auto"  />,
-      title: "Service 2",
+      icon: (
+        <AiOutlineDollarCircle className="text-main group-hover:text-white w-20 h-20 mx-auto" />
+      ),
+      title: "Analizy",
       description:
         "Szeroki zakres usług wyceny praw majątkowych i ograniczonych praw rzeczowych, w tym praw użytkowania, służebności, oraz spółdzielczych praw do lokali. Moje usługi obejmują również dogłębne analizy rynku nieruchomości, opłacalności inwestycji oraz skutków prawnych i finansowych zmian w planowaniu przestrzennym. Dostarczam kompleksowe rozwiązania dla Twoich potrzeb inwestycyjnych i prawnych, bazując na aktualnej wiedzy i przepisach.",
     },
     {
-      icon: <FaFilePen  className="text-main group-hover:text-white w-20 h-20 mx-auto"  />,
-      title: "Service 3",
+      icon: (
+        <FaFilePen className="text-main group-hover:text-white w-20 h-20 mx-auto" />
+      ),
+      title: "Sprawozdania",
       description:
         "Kompleksowe wyceny nieruchomości dla szerokiej gamy potrzeb zobowiązaniowych, w tym dla zabezpieczenia wierzytelności, negocjacji, postępowań spadkowych, czy sprawozdań finansowych. Moje usługi obejmują również ustalanie opłat adiacenckich, cywilno-prawnych, za użytkowanie wieczyste, a także ocenę kosztów i efektywności inwestycji. Dostosowuję swoje usługi do indywidualnych wymagań klienta, zapewniając dokładność i rzetelność w każdym przypadku.",
     },
-    // Add more services as needed
   ];
 
   return (
@@ -42,18 +46,8 @@ const Services = () => {
           viewport={onceTrue}
           className="font-semibold uppercase mx-auto text-center px-7 py-3 bg-main rounded-md inline-block text-white"
         >
-          Our Services
+          Usługi
         </motion.button>
-        <motion.h2
-          variants={slideInFromBottom(0.3, 60)}
-          initial="hidden"
-          whileInView={"visible"}
-          viewport={onceTrue}
-          className="text-3xl lg:text-4xl font-[900] my-4"
-        >
-          Provided Features
-        </motion.h2>
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-6  relative">
           {services.map((service, index) => (
             <motion.div
@@ -64,16 +58,12 @@ const Services = () => {
               key={index}
               className="bg-white flex flex-col gap-5 cursor-pointer group rounded-lg p-8 py-10 shadow-lg hover:bg-main transition duration-300 ease-in-out"
             >
-              {/* <img src={`/agreement.png`} alt={service.title} className="h-20 w-20 mx-auto mb-4 filter group-hover:imgWhite" /> */}
-              {/* < className="text-main group-hover:text-white w-20 h-20 mx-auto" /> */}
-              {
-                service.icon
-              }
+              {service.icon}
 
               <h3 className="text-2xl text-main group-hover:text-white font-bold text-center mb-2">
                 {service.title}
               </h3>
-              <p className="text-gray-600 group-hover:text-gray-100">
+              <p className="text-gray-600 text-center group-hover:text-gray-100">
                 {service.description}
               </p>
             </motion.div>
