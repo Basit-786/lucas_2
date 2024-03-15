@@ -14,9 +14,9 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="py-12 px-4 sm:px-6 lg:px-8 lg:py-16">
+    <div id="skills" className="py-8 px-6 sm:px-6 lg:px-8 lg:py-16">
       <div className="max-w-screen-xl mx-auto">
-        <div className="flex items-center justify-center gap-8">
+        <div className="flex items-center flex-wrap justify-center gap-8">
           {skills.map((skill, index) => (
             <motion.div
               initial={{
@@ -35,7 +35,7 @@ const Skills = () => {
               className="relative bg-white shadow-xl rounded-full p-3 cursor-pointer"
             >
               <div
-                className={`relative w-[200px] h-[200px] rounded-full overflow-hidden border-2 border-gray-300`}
+                className={`relative w-[130px] h-[130px] lg:w-[200px] lg:h-[200px] rounded-full overflow-hidden border-2 border-gray-300`}
               >
                 <Circle
                   percent={skill.percent}
@@ -43,10 +43,10 @@ const Skills = () => {
                   strokeColor="#3D73DD"
                 />
                 <div className="absolute inset-0 flex items-center justify-center flex-col">
-                  <span className="text-3xl ml-4 text-center font-semibold">
+                  <span className="text-xl lg:text-3xl ml-1 lg:ml-3 text-center font-semibold">
                     <CountUp start={0} end={skill.percent} delay={0} />%
                   </span>
-                  <h2 className="text-center text-md">{skill.title}</h2>
+                  <h2 className="text-center text-sm lg:text-md">{skill.title}</h2>
                 </div>
               </div>
             </motion.div>

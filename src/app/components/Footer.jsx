@@ -15,9 +15,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className="py-12 px-4 sm:px-6 lg:px-8 lg:py-16 bg-gray-100 overflow-hidden">
-      <div className="w-full flex flex-col items-center justify-center m-auto">
-        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
+    <div className="py-12 px-10 lg:py-16 bg-gray-100 overflow-hidden">
+      <div className="w-full max-w-screen-xl flex flex-col items-center justify-center m-auto">
+        <div className="w-full h-full flex flex-row items-center justify-between flex-wrap">
           <motion.div
             variants={slideInFromLeft(0.1)}
             initial="hidden"
@@ -25,28 +25,28 @@ const Footer = () => {
             viewport={onceTrue}
             className="min-w-[200px] h-auto flex flex-col justify-start"
           >
-            <div className="font-bold text-2xl">Quick Links</div>
+            <div className="font-[900] text-2xl my-3">Quick Links</div>
             <a
               href="#about"
-              className="text-lg font-medium my-2 hover:text-main hover:underline"
+              className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               About
             </a>
             <a
               href="#services"
-              className="text-lg font-medium my-2 hover:text-main hover:underline"
+              className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               Services
             </a>
             <a
               href="#faq"
-              className="text-lg font-medium my-2 hover:text-main hover:underline"
+              className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               FAQs
             </a>
             <a
               href="#contact"
-              className="text-lg font-medium my-2 hover:text-main hover:underline"
+              className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               Contact
             </a>
@@ -58,24 +58,24 @@ const Footer = () => {
             viewport={onceTrue}
             className="min-w-[200px] h-auto flex flex-col justify-start"
           >
-            <div className="font-bold text-2xl">Social Media</div>
+            <div className="font-[900] text-2xl my-3">Social Media</div>
             <a
               href="#"
-              className="flex items-center gap-2 text-lg font-medium my-2 hover:text-main hover:underline"
+              className="flex items-center gap-2 text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               <FaFacebook className="text-main text-2xl " />
               Facebook
             </a>
             <a
               href="#"
-              className="flex items-center gap-2 text-lg font-medium my-2 hover:text-main hover:underline"
+              className="flex items-center gap-2 text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               <AiFillInstagram className="text-main text-2xl " />
               Instagram
             </a>
             <a
               href="#"
-              className="flex items-center gap-2 text-lg font-medium my-2 hover:text-main hover:underline"
+              className="flex items-center gap-2 text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               <FaTwitter className="text-main text-2xl " />
               Twitter
@@ -88,22 +88,22 @@ const Footer = () => {
             viewport={onceTrue}
             className="min-w-[200px] h-auto flex flex-col justify-start"
           >
-            <div className="font-bold text-2xl">Policies</div>
+            <div className="font-[900] text-2xl my-3">Policies</div>
             <a
               href="#"
-              className="text-lg font-medium my-2 hover:text-main hover:underline"
+              className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               Privacy Policies
             </a>
             <a
               href="#"
-              className="text-lg font-medium my-2 hover:text-main hover:underline"
+              className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               Terms of Service
             </a>
             <a
               href="#"
-              className="text-lg font-medium my-2 hover:text-main hover:underline"
+              className="text-lg font-medium my-1 lg:my-2 hover:text-main hover:underline"
             >
               Disclaimer
             </a>

@@ -2,34 +2,38 @@
 
 import React from "react";
 import { MdOutlineRealEstateAgent } from "react-icons/md";
+import { AiOutlineDollarCircle } from "react-icons/ai";
+import { FaFilePen } from "react-icons/fa6";
+
+
 import { motion } from "framer-motion";
 import { onceTrue, slideInFromBottom } from "../utils/motion";
 
 const Services = () => {
   const services = [
     {
-      icon: "icon-1.svg",
+      icon: <MdOutlineRealEstateAgent className="text-main group-hover:text-white w-20 h-20 mx-auto"  />,
       title: "Service 1",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, dolorum laborum similique incidunt ratione placeat voluptas tempore vitae voluptatibus optio harum, rem ipsum blanditiis reprehenderit laboriosam delectus accusantium error illo.",
+        "Oferuję kompleksowe usługi rzeczoznawcze w Nowym Targu, obejmujące wyceny nieruchomości różnego typu: od niezabudowanych działek, przez domy i mieszkania, po obiekty komercyjne i przemysłowe. Specjalizuję się również w ocenie wartości nieruchomości rolnych, leśnych, zabytkowych oraz o specjalnym przeznaczeniu. Zapewniam profesjonalizm i dokładność, dostosowując usługi do indywidualnych potrzeb klienta.",
     },
     {
-      icon: "icon-2.svg",
+      icon: <AiOutlineDollarCircle  className="text-main group-hover:text-white w-20 h-20 mx-auto"  />,
       title: "Service 2",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, dolorum laborum similique incidunt ratione placeat voluptas tempore vitae voluptatibus optio harum, rem ipsum blanditiis reprehenderit laboriosam delectus accusantium error illo.",
+        "Szeroki zakres usług wyceny praw majątkowych i ograniczonych praw rzeczowych, w tym praw użytkowania, służebności, oraz spółdzielczych praw do lokali. Moje usługi obejmują również dogłębne analizy rynku nieruchomości, opłacalności inwestycji oraz skutków prawnych i finansowych zmian w planowaniu przestrzennym. Dostarczam kompleksowe rozwiązania dla Twoich potrzeb inwestycyjnych i prawnych, bazując na aktualnej wiedzy i przepisach.",
     },
     {
-      icon: "icon-3.svg",
+      icon: <FaFilePen  className="text-main group-hover:text-white w-20 h-20 mx-auto"  />,
       title: "Service 3",
       description:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, dolorum laborum similique incidunt ratione placeat voluptas tempore vitae voluptatibus optio harum, rem ipsum blanditiis reprehenderit laboriosam delectus accusantium error illo.",
+        "Kompleksowe wyceny nieruchomości dla szerokiej gamy potrzeb zobowiązaniowych, w tym dla zabezpieczenia wierzytelności, negocjacji, postępowań spadkowych, czy sprawozdań finansowych. Moje usługi obejmują również ustalanie opłat adiacenckich, cywilno-prawnych, za użytkowanie wieczyste, a także ocenę kosztów i efektywności inwestycji. Dostosowuję swoje usługi do indywidualnych wymagań klienta, zapewniając dokładność i rzetelność w każdym przypadku.",
     },
     // Add more services as needed
   ];
 
   return (
-    <div id="services" className="py-12 px-4 sm:px-6 lg:px-8 lg:py-26">
+    <div id="services" className="py-12 px-6 sm:px-6 lg:px-8 lg:py-26">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center">
         <motion.button
           variants={slideInFromBottom(0, 40)}
@@ -45,7 +49,7 @@ const Services = () => {
           initial="hidden"
           whileInView={"visible"}
           viewport={onceTrue}
-          className="text-3xl lg:text-4xl font-bold my-4"
+          className="text-3xl lg:text-4xl font-[900] my-4"
         >
           Provided Features
         </motion.h2>
@@ -61,7 +65,10 @@ const Services = () => {
               className="bg-white flex flex-col gap-5 cursor-pointer group rounded-lg p-8 py-10 shadow-lg hover:bg-main transition duration-300 ease-in-out"
             >
               {/* <img src={`/agreement.png`} alt={service.title} className="h-20 w-20 mx-auto mb-4 filter group-hover:imgWhite" /> */}
-              <MdOutlineRealEstateAgent className="text-main group-hover:text-white w-20 h-20 mx-auto" />
+              {/* < className="text-main group-hover:text-white w-20 h-20 mx-auto" /> */}
+              {
+                service.icon
+              }
 
               <h3 className="text-2xl text-main group-hover:text-white font-bold text-center mb-2">
                 {service.title}

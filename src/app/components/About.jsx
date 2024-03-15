@@ -5,7 +5,7 @@ import { onceTrue, slideInFromLeft, slideInFromRight } from "../utils/motion";
 
 const About = () => {
   return (
-    <div id="about" className="py-12 px-4 sm:px-6 lg:px-8 lg:py-16">
+    <div id="about" className="py-12 px-6 sm:px-6 lg:px-8 lg:py-16">
       <div className="max-w-screen-xl mx-auto lg:flex lg:items-center">
         {/* Text Section */}
         <motion.div
@@ -13,20 +13,26 @@ const About = () => {
           initial="hidden"
           whileInView={"visible"}
           viewport={onceTrue}
-          className="lg:w-1/2"
+          className="lg:w-1/2 mb-8 lg:mb-0"
         >
-          <button className="font-semibold uppercase px-7 py-3 bg-main rounded-md inline-block text-white">
+          <button className="font-semibold uppercase  px-7 py-3 bg-main rounded-md inline-block text-white">
             About Us
           </button>
-          <h2 className="text-3xl lg:text-4xl font-bold my-4">
+          <h2 className="text-3xl lg:text-4xl font-[900] my-4">
             Why you should hire me?
           </h2>
           <p className="mt-3 text-lg leading-7 text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-            scelerisque vehicula mauris, sit amet venenatis tortor vestibulum
-            id. Nulla facilisi. Sed eget maximus nunc, id ultricies neque. In
-            hac habitasse platea dictumst. Proin interdum lectus vitae libero
-            bibendum eleifend.
+            Jako rzeczoznawca majątkowy z Nowego Targu, z tytułem magistra
+            ekonomii z Uniwersytetu Ekonomicznego w Krakowie i dodatkowymi
+            studiami podyplomowymi w Katowicach, oferuję wyceny nieruchomości
+            oparte na solidnym wykształceniu i praktyce. Posiadam uprawnienia
+            zawodowe nr 7112, nadane przez Ministra Infrastruktury, co pozwala
+            mi na profesjonalne określanie wartości nieruchomości. Pracuję
+            zgodnie z Powszechnymi Krajowymi Zasadami Wyceny, zapewniając
+            dokładność i rzetelność. Moje usługi są kompleksowe, obejmujące
+            również ubezpieczenie odpowiedzialności cywilnej oraz ciągłe
+            podnoszenie kwalifikacji, co potwierdza ukończenie szkolenia w
+            Związku Banków Polskich.
           </p>
           <div className="mt-6">
             <button className="bg-main btnn text-white font-semibold py-2 px-6 rounded-lg">
@@ -52,12 +58,12 @@ const About = () => {
           <img
             src="/about-bg.png"
             alt=""
-            className="w-[130px] h-[130px] object-cover absolute top-[-30px] right-[30px] z-[-1]"
+            className="w-[130px] h-[130px] object-cover absolute top-[-30px] right-[-30px] lg:right-[30px] z-[-1]"
           />
           <img
             src="/about-bg.png"
             alt=""
-            className="w-[130px] h-[130px] object-cover absolute bottom-[-30px] left-[30px] z-[-1]"
+            className="w-[130px] h-[130px] object-cover absolute bottom-[-30px] left-[-30px] lg:left-[30px] z-[-1]"
           />
         </motion.div>
       </div>

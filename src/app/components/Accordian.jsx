@@ -1,19 +1,16 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 const Accordion = ({ title, answer }) => {
   const [accordionOpen, setAccordionOpen] = useState(false);
 
   return (
-    <div className="py-2 max-w-[700px] w-full">
+    <div className="py-2 max-w-[900px] w-full">
       <button
         onClick={() => setAccordionOpen(!accordionOpen)}
-        className={`flex justify-between items-center transition-all duration-200 ease-in-out w-full text-xl font-semibold px-6 py-4 rounded-[5px] ${
-          accordionOpen
-            ? "bg-gray-200"
-            : "bg-gray-100"
+        className={`flex justify-between items-center text-left transition-all duration-200 ease-in-out w-full text-lg lg:text-xl font-[700] lg:px-6 px-4 py-3 lg:py-4 rounded-[8px] ${
+          accordionOpen ? "bg-gray-300" : "bg-gray-100"
         }`}
-
       >
         <span>{title}</span>
         <svg
@@ -43,9 +40,9 @@ const Accordion = ({ title, answer }) => {
         </svg>
       </button>
       <div
-        className={`grid overflow-hidden transition-all duration-300 ease-in-out text-gray-600 leading-[30px] text-[20px] ${
+        className={`grid overflow-hidden transition-all duration-300 ease-in-out lg:px-4 px-2 text-gray-600 leading-[30px] text-[16px] lg:text-[20px] ${
           accordionOpen
-            ? "grid-rows-[1fr] opacity-100 mt-4"
+            ? "grid-rows-[1fr] opacity-100 mt-3 lg:mt-4"
             : "grid-rows-[0fr] opacity-0"
         }`}
       >

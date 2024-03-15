@@ -12,24 +12,22 @@ import { onceTrue, slideInFromBottom } from "../utils/motion";
 
 const Contact = () => {
   return (
-    <section id="contact" class="py-12 px-4 sm:px-6 lg:px-8">
+    <section id="contact" class="py-12 px-6 sm:px-6 lg:px-8">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center">
-        <h2 className="text-3xl lg:text-4xl font-bold my-4 mb-12">
-          Contact Us
-        </h2>
+        <h2 className="text-3xl lg:text-4xl font-[900] my-4 mb-12">Kontakt</h2>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <motion.div
             variants={slideInFromBottom(0, 60)}
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 py-8 flex items-center justify-center flex-col"
+            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <HiOutlineMail className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Get in Touch</h3>
+            <h3 class="text-3xl font-semibold mt-3">Email</h3>
 
             <p class="text-gray-800 text-center text-lg my-3">
-              Our customer support team will reply your question in 24 hours.
+              Zapytania oraz dokumentację proszę wysyłać na
             </p>
 
             <a
@@ -37,7 +35,7 @@ const Contact = () => {
               className="text-lg hover:text-blue-950 font-medium underline"
             >
               {" "}
-              contact@example.com
+              BIURO@BELTOWKSA.PL{" "}
             </a>
           </motion.div>
           <motion.div
@@ -45,13 +43,13 @@ const Contact = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 py-8 flex items-center justify-center flex-col"
+            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <FiPhoneCall className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Corporate Office</h3>
+            <h3 class="text-3xl font-semibold mt-3">Telefon</h3>
 
             <p class="text-gray-800 text-center text-lg my-3">
-              You can call to our corporate office to clear your issues.
+              Zapraszam do kontaktu telefonicznego
             </p>
 
             <a
@@ -59,7 +57,7 @@ const Contact = () => {
               className="text-lg hover:text-blue-950 font-medium underline"
             >
               {" "}
-              92 000 99890808
+              508 570 286
             </a>
           </motion.div>
           <motion.div
@@ -67,25 +65,23 @@ const Contact = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto row-span-2 rounded-[10px] text-center shadow-contact p-6 py-8 flex items-center justify-center flex-col"
+            class="bg-white h-auto row-span-2 rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <IoCalendarOutline className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">
-              Customer Support Service
-            </h3>
+            <h3 class="text-3xl font-semibold mt-3">Godziny Otwarcia</h3>
 
             <p class="text-gray-800 text-center text-lg my-3">
-              You can visit our office any time within our service timings
+              Staram się być dla was dostępna cały rok
             </p>
             <p class="text-gray-800 text-center text-xl">Working Hours</p>
             <p class="text-gray-800 text-center text-lg my-3 font-semibold">
-              Monday – Friday
+              Poniedziałek-Piątek
               <br />
-              7:00AM – 7:00PM CST
+              9:00 - 17:00
               <br />
-              Saturday & Sunday
+              Sobota i Niedziela
               <br />
-              9:00AM – 6:00PM CST
+              Nieczynne
             </p>
           </motion.div>
           <motion.div
@@ -93,16 +89,17 @@ const Contact = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 py-8 flex items-center justify-center flex-col"
+            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <MdLocationPin className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Address</h3>
+            <h3 class="text-3xl font-semibold mt-3">Adres</h3>
 
             <p class="text-gray-800 text-center text-lg my-2">
-              You can visit our office anytime.
+              Biuro znajduje się
             </p>
             <p class="text-gray-800 text-center text-xl my-2">
-              ul. Grel Boczna 40, 34-400
+              ul. Grel Boczna <br />
+              34-400 Nowy Targ{" "}
             </p>
           </motion.div>
           <motion.div
@@ -110,21 +107,21 @@ const Contact = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 py-8 flex items-center justify-center flex-col"
+            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <FaInfoCircle className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Info</h3>
+            <h3 class="text-3xl font-semibold mt-3">Dane </h3>
             <div className="flex flex-col items-start justify-start gap-1 my-1 text-left">
               <p class="text-gray-800 text-md text-left font-semibold">
-                Number NIP
+                Numer NIP
               </p>
-              <p class="text-gray-800 text-md">NIP 7352546374</p>
+              <p class="text-gray-800 text-md">7352546374</p>
             </div>
             <div className="flex flex-col items-start justify-start gap-1 my-1 text-left">
               <p class="text-gray-800 text-md text-left font-semibold">
-                Number Region
+                Numer REGON
               </p>
-              <p class="text-gray-800 text-md">REGON 369271351</p>
+              <p class="text-gray-800 text-md">369271351</p>
             </div>
           </motion.div>
         </div>{" "}

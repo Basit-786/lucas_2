@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="py-12 px-4 sm:px-6 lg:px-8 lg:py-16 flex items-center justify-center min-h-[75vh]"
+      className="py-12 px-6 sm:px-6 lg:px-8 lg:py-16 flex items-center justify-center min-h-[75vh]"
     >
       <div className="max-w-screen-xl mx-auto lg:flex lg:items-center relative">
         {/* Image Section */}
@@ -29,7 +29,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            className="absolute w-[1020px] h-[330px] top-[0] rounded-r-full left-[-68%] z-[-1] bg-main"
+            className="absolute w-[1020px] h-[330px] top-[-2%] left-[-700px] md:top-[8%] rounded-r-full md:left-[-61%] z-[-1] bg-main"
           ></motion.div>
         </div>
         {/* Text Section */}
@@ -38,7 +38,7 @@ const Hero = () => {
           initial="hidden"
           whileInView={"visible"}
           viewport={onceTrue}
-          className="mt-8 lg:mt-0 lg:w-1/2"
+          className="mt-10 lg:mt-0 lg:w-1/2"
         >
           <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
           Rzeczoznawca Majątkowy - Natalia Bełtowska

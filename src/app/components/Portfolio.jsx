@@ -16,12 +16,12 @@ const Portfolio = () => {
   ];
 
   return (
-    <div id="portfolio" className="py-12 px-4 sm:px-6 lg:px-8 lg:py-16">
+    <div id="portfolio" className="py-12 px-6 sm:px-6 lg:px-8 lg:py-16">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center">
         <button className="font-semibold uppercase mx-auto mb-5 text-center px-7 py-3 bg-main rounded-md inline-block text-white">
           Portfolio
         </button>
-        <h2 className="text-3xl lg:text-4xl font-bold my-4">
+        <h2 className="text-3xl lg:text-4xl font-[900] my-4">
           Featured Projects
         </h2>
 
@@ -34,7 +34,7 @@ const Portfolio = () => {
               viewport={onceTrue}
               key={index}
               className={`bg-white rounded-lg group shadow-lg overflow-hidden relative ${
-                index === 0 ? "col-span-2 row-span-2" : ""
+                index === 0 ? "lg:col-span-2 lg:row-span-2" : ""
               }`}
             >
               <img

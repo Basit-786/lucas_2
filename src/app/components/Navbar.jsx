@@ -6,8 +6,30 @@ import {
   slideInFromBottom,
   slideInFromLeft,
   slideInFromRight,
-  slideInFromTop,
 } from "../utils/motion";
+
+const links = [
+  {
+    name: "Główna",
+    link: "#hero",
+  },
+  {
+    name: "O Mnie",
+    link: "#about",
+  },
+  {
+    name: "Usługi",
+    link: "#skills",
+  },
+  {
+    name: "Certyfikaty",
+    link: "#portfolio",
+  },
+  {
+    name: "Kontakt",
+    link: "#contact",
+  },
+];
 
 const Navbar = () => {
   return (
@@ -30,38 +52,17 @@ const Navbar = () => {
             variants={slideInFromBottom(0, 20)}
             initial="hidden"
             whileInView={"visible"}
-            className="hidden sm:-my-px sm:ml-6 sm:flex gap-4 text-sm uppercase font-bold text-main tracking-[1px] "
+            className="hidden sm:-my-px sm:ml-6 sm:flex gap-4 font-[900] text-sm uppercase text-main tracking-[1px] "
           >
-            <a
-              href="#nav"
-              className="hover:bg-main hover:text-white px-2 py-1 rounded-[4px] transition duration-150 ease-in-out"
-            >
-              Home
-            </a>
-            <a
-              href="#about"
-              className="hover:bg-main hover:text-white px-2 py-1 rounded-[4px] transition duration-150 ease-in-out"
-            >
-              About
-            </a>
-            <a
-              href="#skills"
-              className="hover:bg-main hover:text-white px-2 py-1 rounded-[4px] transition duration-150 ease-in-out"
-            >
-              Skills
-            </a>
-            <a
-              href="#portfolio"
-              className="hover:bg-main hover:text-white px-2 py-1 rounded-[4px] transition duration-150 ease-in-out"
-            >
-              Portfolio
-            </a>
-            <a
-              href="#contact"
-              className="hover:bg-main hover:text-white px-2 py-1 rounded-[4px] transition duration-150 ease-in-out"
-            >
-              Contact
-            </a>
+            {links.map((link, index) => (
+              <a
+                key={index}
+                href={link.link}
+                className="hover:bg-main hover:text-white  px-2 py-1 rounded-[4px] transition duration-150 ease-in-out"
+              >
+                {link.name}
+              </a>
+            ))}
           </motion.div>
           {/* Call to Action Button */}
           <motion.div
