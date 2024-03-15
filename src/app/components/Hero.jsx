@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="py-12 px-6 sm:px-6 lg:px-8 lg:py-16 flex items-center justify-center min-h-[75vh]"
+      className="py-12 px-6 sm:px-6 lg:px-8 lg:py-16 flex items-center justify-center min-h-[80vh]"
     >
       <div className="max-w-screen-xl mx-auto lg:flex lg:items-center relative">
         {/* Image Section */}
@@ -29,7 +29,7 @@ const Hero = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            className="absolute w-[1020px] h-[330px] top-[-2%] left-[-700px] md:top-[8%] rounded-r-full md:left-[-61%] z-[-1] bg-main"
+            className="absolute w-[1020px] h-[330px] top-[-2%] left-[-700px] md:top-[10%] rounded-r-full md:left-[-66%] z-[-1] bg-main"
           ></motion.div>
         </div>
         {/* Text Section */}
@@ -46,7 +46,7 @@ const Hero = () => {
           <p className="mt-3 text-lg leading-7 text-gray-600">
             Ekspertyza i Doświadczenie w Twoim Zasięgu
           </p>
-          <p className="mt-4 max-w-2xl text-lg leading-7 text-gray-600">
+          <p className="mt-3 max-w-2xl text-lg leading-7 text-gray-600">
             W tym miejscu skupiamy się na dostarczeniu wartościowej usługi
             wyceny nieruchomości, podkreślając profesjonalizm i bogate
             doświadczenie w Nowym Targu i okolicach. <br />
@@ -54,7 +54,7 @@ const Hero = () => {
             potrzeb każdego klienta, z naciskiem na precyzję, rzetelność i
             zgodność z aktualnymi standardami rynkowymi.
           </p>
-          <div className="mt-10 uppercase">
+          <div className="mt-8 uppercase">
             <a
               href="#contact"
               className="mr-4 btnn inline-block bg-main  text-white font-semibold py-3 px-6 rounded-lg"
