@@ -97,8 +97,8 @@ const Contact = () => {
               Biuro znajduje się
             </p>
             <p class="text-gray-800 text-center text-xl my-2">
-              ul. Grel Boczna
-              <br /> 40, 34-400 Nowy Targ
+              ul. Grel Boczna 40
+              <br /> 34-400 Nowy Targ
             </p>
             <div className="flex gap-4 items-center justify-center">
             <a href="https://maps.apple.com/?address=Grel%20Boczna%2040,%2034-400%20Nowy%20Targ,%20Poland&ll=49.482962,20.002036&q=Grel%20Boczna%2040&t=h">
