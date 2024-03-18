@@ -40,7 +40,7 @@ const Skills = () => {
                 <Circle
                   percent={skill.percent}
                   strokeWidth={5}
-                  strokeColor="#3D73DD"
+                  strokeColor="#1e52b2"
                 />
                 <div className="absolute inset-0 flex items-center justify-center flex-col">
                   <span className="text-xl lg:text-3xl text-center font-semibold">

@@ -34,8 +34,7 @@ const Contact = () => {
               href="mailto:BIURO@BELTOWKSA.PL"
               className="text-lg hover:text-blue-950 font-medium underline"
             >
-              {" "}
-              BIURO@BELTOWKSA.PL{" "}
+              BIURO@BELTOWSKA.PL
             </a>
           </motion.div>
           <motion.div
@@ -98,9 +97,18 @@ const Contact = () => {
               Biuro znajduje się
             </p>
             <p class="text-gray-800 text-center text-xl my-2">
-              ul. Grel Boczna <br />
-              34-400 Nowy Targ{" "}
+              ul. Grel Boczna
+              <br /> 40, 34-400 Nowy Targ
             </p>
+            <div className="flex gap-4 items-center justify-center">
+            <a href="https://maps.apple.com/?address=Grel%20Boczna%2040,%2034-400%20Nowy%20Targ,%20Poland&ll=49.482962,20.002036&q=Grel%20Boczna%2040&t=h">
+           <img src="/amap.png" alt="" className="w-[50px] h-[65px] object-cover" />
+
+            </a>
+            <a href="https://www.google.com/maps/place/Grel+Boczna+40,+34-400+Nowy+Targ,+Poland/@49.4834684,20.0000435,16z/data=!4m6!3m5!1s0x4715e5f976191237:0xfbf0af8066d34a65!8m2!3d49.4838267!4d19.9988899!16s%2Fg%2F11hsv43v8s">
+           <img src="/gmap.png" alt="" className="w-[50px] h-[50px] object-cover" />
+           </a>
+           </div>
           </motion.div>
           <motion.div
             variants={slideInFromBottom(0.7, 60)}
@@ -121,23 +129,25 @@ const Contact = () => {
               <p class="text-gray-800 text-md text-left font-semibold">
                 Numer REGON
               </p>
-              <a href="" class="text-gray-800 text-md">369271351</a>
+              <a href="" class="text-gray-800 text-md">
+                369271351
+              </a>
             </div>
           </motion.div>
         </div>{" "}
-        <motion.div 
-        
-        variants={slideInFromBottom(0.8, 70)}
-        initial="hidden"
-        whileInView={"visible"}
-        viewport={onceTrue}
-        class="text-center mt-8">
+        <motion.div
+          variants={slideInFromBottom(0.8, 70)}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={onceTrue}
+          class="text-center mt-8"
+        >
           <p class="text-2xl font-semibold mt-7 mb-4">Gotowy do kontaktu?</p>
           <a
             href="#nav"
             className="font-semibold btnn uppercase mx-auto text-center px-7 py-3 transition-all duration-100 ease-linear bg-white border-main border hover:bg-main hover:text-white  rounded-md inline-block text-main"
           >
-           Zadzwoń 
+            Zadzwoń
           </a>{" "}
         </motion.div>
       </div>

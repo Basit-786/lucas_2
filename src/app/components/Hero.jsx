@@ -20,7 +20,7 @@ const Hero = () => {
               whileInView={"visible"}
               viewport={onceTrue}
               className="h-full w-full object-cover rounded-full border-[12px] border-white"
-              src="/hero.jpg"
+              src="/hero.png"
               alt="Image"
             />
           </div>
