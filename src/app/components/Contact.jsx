@@ -119,13 +119,13 @@ const Contact = () => {
           >
             <FaInfoCircle className="text-6xl text-main " />
             <h3 class="text-3xl font-semibold mt-3">Dane </h3>
-            <div className="flex flex-col items-start justify-start gap-1 my-1 text-left">
+            <div className="flex flex-col items-center text-center justify-start gap-1 my-1">
               <p class="text-gray-800 text-md text-left font-semibold">
                 Numer NIP
               </p>
               <p class="text-gray-800 text-md">7352546374</p>
             </div>
-            <div className="flex flex-col items-start justify-start gap-1 my-1 text-left">
+            <div className="flex flex-col items-center justify-start gap-1 my-1 text-center">
               <p class="text-gray-800 text-md text-left font-semibold">
                 Numer REGON
               </p>
