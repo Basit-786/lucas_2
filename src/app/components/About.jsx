@@ -48,10 +48,10 @@ const About = () => {
           viewport={onceTrue}
           className="lg:w-1/2 lg:mr-12 mb-8 lg:mb-0 relative flex items-center justify-center"
         >
-          <div className="w-[340px] h-[350px]">
+          <div className="w-[400px] h-[450px]">
             <img
               className="h-full w-full object-cover rounded-lg"
-              src="/about.png"
+              src="/about2.jpg"
               alt="About Image"
             />
           </div>
