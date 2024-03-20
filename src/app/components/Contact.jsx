@@ -31,8 +31,8 @@ const Contact = () => {
             </p>
 
             <a
-              href="mailto:BIURO@BELTOWKSA.PL"
-              className="text-lg hover:text-blue-950 font-medium underline"
+              href="mailto:biuro@beltowksa.pl"
+              className="text-lg lowercase hover:text-blue-950 font-medium underline"
             >
               BIURO@BELTOWSKA.PL
             </a>

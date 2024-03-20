@@ -6,9 +6,10 @@ import { onceTrue, slideInFromBottom } from "../utils/motion";
 
 const Portfolio = () => {
   const projects = [
-    { image: "/certificate.jpg", title: "Certyfikat 1" },
-    { image: "/certificate2.jpg", title: "Certyfikat 2" },
-    { image: "/certificate3.jpg", title: "Certyfikat 3" },
+    { image: "/certificate44.png", title: "Certyfikat 1" },
+    { image: "/certificate.jpg", title: "Certyfikat 2" },
+    { image: "/certificate2.jpg", title: "Certyfikat 3" },
+    { image: "/certificate3.jpg", title: "Certyfikat 4" },
   ];
 
   return (
@@ -26,14 +27,14 @@ const Portfolio = () => {
               whileInView={"visible"}
               viewport={onceTrue}
               key={index}
-              className={`bg-white rounded-lg group shadow-lg overflow-hidden relative ${
-                index === 0 ? "lg:col-span-2 lg:row-span-2" : ""
+              className={`bg-white rounded-lg group h-full shadow-lg overflow-hidden relative ${
+                index === 0 ? "lg:col-span-2 lg:row-span-2 max-h-[1200px]" : "max-h-[600px]"
               }`}
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-auto group-hover:opacity-75 transition duration-300 ease-in-out"
+                className="w-full h-full object-cover object-center group-hover:opacity-75 transition duration-300 ease-in-out"
               />
               <div className="absolute bottom-0 left-0 right-0 py-4 px-6 text-black z-[10] transform translate-y-full  group-hover:translate-y-0 transition duration-300 ease-in-out opacity-0 group-hover:opacity-100">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
