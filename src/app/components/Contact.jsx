@@ -12,21 +12,21 @@ import { onceTrue, slideInFromBottom } from "../utils/motion";
 
 const Contact = () => {
   return (
-    <section id="contact" class="py-12 px-6 sm:px-6 lg:px-8">
+    <section id="contact" className="py-12 px-6 sm:px-6 lg:px-8">
       <div className="max-w-screen-xl mx-auto flex flex-col items-center justify-center">
         <h2 className="text-3xl lg:text-4xl font-[900] my-4 mb-12">Kontakt</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           <motion.div
             variants={slideInFromBottom(0, 60)}
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
+            className="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <HiOutlineMail className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Email</h3>
+            <h3 className="text-3xl font-semibold mt-3">Email</h3>
 
-            <p class="text-gray-800 text-center text-lg my-3">
+            <p className="text-gray-800 text-center text-lg my-3">
               Zapytania oraz dokumentację proszę wysyłać na
             </p>
 
@@ -42,12 +42,12 @@ const Contact = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
+            className="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <FiPhoneCall className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Telefon</h3>
+            <h3 className="text-3xl font-semibold mt-3">Telefon</h3>
 
-            <p class="text-gray-800 text-center text-lg my-3">
+            <p className="text-gray-800 text-center text-lg my-3">
               Zapraszam do kontaktu telefonicznego
             </p>
 
@@ -64,16 +64,16 @@ const Contact = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto row-span-2 rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
+            className="bg-white h-auto row-span-2 rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <IoCalendarOutline className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Godziny Otwarcia</h3>
+            <h3 className="text-3xl font-semibold mt-3">Godziny Otwarcia</h3>
 
-            <p class="text-gray-800 text-center text-lg my-3">
+            <p className="text-gray-800 text-center text-lg my-3">
               Staram się być dla was dostępna cały rok
             </p>
-            <p class="text-gray-800 text-center text-xl">Godziny pracy</p>
-            <p class="text-gray-800 text-center text-lg my-3 font-semibold">
+            <p className="text-gray-800 text-center text-xl">Godziny pracy</p>
+            <p className="text-gray-800 text-center text-lg my-3 font-semibold">
               Poniedziałek-Piątek
               <br />
               9:00 - 17:00
@@ -88,15 +88,15 @@ const Contact = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
+            className="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <MdLocationPin className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Adres</h3>
+            <h3 className="text-3xl font-semibold mt-3">Adres</h3>
 
-            <p class="text-gray-800 text-center text-lg my-2">
+            <p className="text-gray-800 text-center text-lg my-2">
               Biuro znajduje się
             </p>
-            <p class="text-gray-800 text-center text-xl my-2">
+            <p className="text-gray-800 text-center text-xl my-2">
               ul. Grel Boczna 40
               <br /> 34-400 Nowy Targ
             </p>
@@ -115,21 +115,21 @@ const Contact = () => {
             initial="hidden"
             whileInView={"visible"}
             viewport={onceTrue}
-            class="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
+            className="bg-white h-auto rounded-[10px] text-center shadow-contact p-6 px-10 cursor-pointer py-8 flex items-center justify-center flex-col"
           >
             <FaInfoCircle className="text-6xl text-main " />
-            <h3 class="text-3xl font-semibold mt-3">Dane </h3>
+            <h3 className="text-3xl font-semibold mt-3">Dane </h3>
             <div className="flex flex-col items-center text-center justify-start gap-1 my-1">
-              <p class="text-gray-800 text-md text-left font-semibold">
+              <p className="text-gray-800 text-md text-left font-semibold">
                 Numer NIP
               </p>
-              <p class="text-gray-800 text-md">7352546374</p>
+              <p className="text-gray-800 text-md">7352546374</p>
             </div>
             <div className="flex flex-col items-center justify-start gap-1 my-1 text-center">
-              <p class="text-gray-800 text-md text-left font-semibold">
+              <p className="text-gray-800 text-md text-left font-semibold">
                 Numer REGON
               </p>
-              <a href="" class="text-gray-800 text-md">
+              <a href="" className="text-gray-800 text-md">
                 369271351
               </a>
             </div>
@@ -140,9 +140,9 @@ const Contact = () => {
           initial="hidden"
           whileInView={"visible"}
           viewport={onceTrue}
-          class="text-center mt-8"
+          className="text-center mt-8"
         >
-          <p class="text-2xl font-semibold mt-7 mb-4">Gotowy do kontaktu?</p>
+          <p className="text-2xl font-semibold mt-7 mb-4">Gotowy do kontaktu?</p>
           <a
             href="#nav"
             className="font-semibold btnn uppercase mx-auto text-center px-7 py-3 transition-all duration-100 ease-linear bg-white border-main border hover:bg-main hover:text-white  rounded-md inline-block text-main"

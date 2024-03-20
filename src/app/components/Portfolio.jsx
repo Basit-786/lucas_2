@@ -27,8 +27,8 @@ const Portfolio = () => {
               whileInView={"visible"}
               viewport={onceTrue}
               key={index}
-              className={`bg-white rounded-lg group h-full shadow-lg overflow-hidden relative ${
-                index === 0 ? "lg:col-span-2 lg:row-span-2 max-h-[1200px]" : "max-h-[600px]"
+              className={`bg-white rounded-lg group shadow-lg overflow-hidden relative ${
+                index === 0 ? "lg:col-span-2 lg:row-span-2 " : ""
               }`}
             >
               <img
